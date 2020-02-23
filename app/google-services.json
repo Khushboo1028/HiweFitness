@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "384750734742",
+    "firebase_url": "https://hiwe-fitness.firebaseio.com",
+    "project_id": "hiwe-fitness",
+    "storage_bucket": "hiwe-fitness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384750734742:android:c373e64d0ad81deaca61b7",
+        "android_client_info": {
+          "package_name": "com.rgala98.hiwefitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384750734742-ss0qivv12f34kbbbdt54u915ksvvcuo0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rgala98.hiwefitness",
+            "certificate_hash": "7de884e06f58f4f461d449e3eb69be78ae354e9f"
+          }
+        },
+        {
+          "client_id": "384750734742-01foktp2m4o85s9032affth1e5d0d7su.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rgala98.hiwefitness",
+            "certificate_hash": "02818f647ce90b5f77f7e1cf97515f85a3acae57"
+          }
+        },
+        {
+          "client_id": "384750734742-729sspj5qqsd3ugjl8m2lek7gfkdt5j7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAprOzdKWbdRf4zcribJLpHfVeXv8bQTzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384750734742-729sspj5qqsd3ugjl8m2lek7gfkdt5j7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

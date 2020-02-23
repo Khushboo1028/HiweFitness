@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red_orange_yellow_gradient"
+    android:padding="24dp"
+    tools:context=".Login.ReadyToGoActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/center_rel">
+
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_hiwe_circle"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_hiwe_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spd_semibold"
+            android:textColor="@color/white"
+            android:layout_below="@id/img_hiwe_logo"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="You are ready to go"
+            android:textSize="32dp"
+            android:id="@+id/tv_ready"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spd_semibold"
+            android:textColor="@color/white"
+            android:layout_below="@id/tv_ready"
+            android:layout_marginTop="14dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Thanks for taking the time to create an account with us. Now this is the fun part, let’s explore the app."
+            android:textSize="24dp"
+            android:id="@+id/tv_thanks"/>
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:layout_below="@id/center_rel"
+        android:background="@drawable/white_rectangle_10"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/spd_semibold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:id="@+id/btn_getting_started"/>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/superLayout"
+    tools:context=".Login.EnterOtpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:id="@+id/mainrel">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_hiwe_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="54dp"
+                android:id="@+id/top_logo"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We have sent you a code to\nverify your number"
+                android:layout_below="@id/top_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/spd_semibold"
+                android:textSize="30dp"
+                android:id="@+id/tv_verify"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_verify"
+                android:padding="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/number_rel">
+
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/orange_25_rectangle_5"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:maxLength="1"
+                    android:id="@+id/et_number_1"/>
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/orange_25_rectangle_5"
+                    android:textAlignment="center"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:maxLength="1"
+                    android:layout_toRightOf="@id/et_number_1"
+                    android:id="@+id/et_number_2"/>
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/orange_25_rectangle_5"
+                    android:textAlignment="center"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:maxLength="1"
+                    android:layout_toRightOf="@id/et_number_2"
+                    android:id="@+id/et_number_3"/>
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/orange_25_rectangle_5"
+                    android:textAlignment="center"
+                    android:layout_marginStart="16dp"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/et_number_3"
+                    android:inputType="phone"
+                    android:id="@+id/et_number_4"/>
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/orange_25_rectangle_5"
+                    android:textAlignment="center"
+                    android:layout_marginStart="16dp"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:layout_toRightOf="@id/et_number_4"
+                    android:id="@+id/et_number_5"/>
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/orange_25_rectangle_5"
+                    android:textAlignment="center"
+                    android:layout_marginStart="16dp"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:inputType="phone"
+                    android:layout_toRightOf="@id/et_number_5"
+                    android:id="@+id/et_number_6"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Didn't Receive? Resend"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/spd_medium"
+                android:layout_below="@id/number_rel"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/gray"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:id="@+id/tv_resend_code"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:layout_below="@id/tv_resend_code"
+                android:background="@drawable/orange_rectangle_10"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/spd_semibold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:id="@+id/btn_verify"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progress_bar"/>
+
+</RelativeLayout>

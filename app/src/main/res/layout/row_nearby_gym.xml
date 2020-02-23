@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_shadow_10"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_launcher_background"
+            android:background="@drawable/round_outline"
+            android:id="@+id/img_gym"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_gym"
+            android:layout_marginStart="16dp"
+            android:id="@+id/text_rel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:fontFamily="@font/spd_semibold"
+                android:text="Kosmic Fitness"
+                android:textColor="@color/black"
+                android:id="@+id/tv_gym_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:fontFamily="@font/spd_semibold"
+                android:text="Mukherjee Nagar, North Delhi"
+                android:textColor="@color/gray"
+                android:layout_below="@id/tv_gym_name"
+                android:id="@+id/tv_gym_address"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_gym_address"
+                android:layout_marginTop="8dp"
+                android:id="@+id/time_rel">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_time"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_time"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_time"
+                    android:layout_marginStart="10dp"
+                    android:text="06:00 - 22:30"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/spd_medium"
+                    android:id="@+id/tv_time"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/text_rel"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/location_rel">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_orange_location"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_location"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="0.69 Kms"
+                android:layout_toRightOf="@id/img_location"
+                android:fontFamily="@font/spd_medium"
+                android:layout_marginStart="8dp"
+                android:id="@+id/tv_distance" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

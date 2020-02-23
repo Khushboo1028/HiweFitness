@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/superLayout"
+    android:background="@color/white"
+    tools:context=".Login.PersonalDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp"
+            android:id="@+id/mainrel">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_hiwe_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="54dp"
+                android:id="@+id/top_logo"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Almost there... \nA few more details"
+                android:layout_below="@id/top_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/spd_semibold"
+                android:textSize="32dp"
+                android:id="@+id/tv_verify"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv_verify"
+                android:layout_marginTop="40dp"
+                android:id="@+id/image_rel">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_male"
+                    android:id="@+id/img_male"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_male"
+                    android:layout_marginStart="40dp"
+                    android:src="@drawable/ic_female"
+                    android:id="@+id/img_female"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image_rel"
+                android:layout_marginTop="40dp"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/orange_25_rectangle_5"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/name_rel">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_name"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_left"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:background="@null"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/img_left"
+                    android:textColor="@color/light_black_60"
+                  android:fontFamily="@font/spd_medium"
+                    android:inputType="textCapWords"
+                    android:hint="Full Name"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/et_name"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_rel"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="16dp"
+                android:background="@drawable/orange_25_rectangle_5"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/email_rel">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_email"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/img_email"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:background="@null"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/img_email"
+                    android:textColor="@color/light_black_60"
+                    android:fontFamily="@font/spd_medium"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/et_email"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:layout_below="@id/email_rel"
+                android:background="@drawable/orange_rectangle_10"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/spd_semibold"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:id="@+id/btn_continue"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:id="@+id/progress_bar"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Hiwe</string>
+
+
+    <!--    Health Goals-->
+    <string name="health_goal_1">Be Healthy</string>
+    <string name="health_goal_2">Muscular Body</string>
+    <string name="health_goal_3">Lean Body</string>
+    <string name="health_goal_4">Six Pack Abs</string>
+    <string name="health_goal_5">Improve Fitness</string>
+
+    <!--    Firebase Strings-->
+
+    <string name="users">users</string>
+    <string name="contact_number">contact_number</string>
+    <string name="gender">gender</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="health_goal">health_goal</string>
+    <string name="profile_url">profile_url</string>
+
+
+</resources>

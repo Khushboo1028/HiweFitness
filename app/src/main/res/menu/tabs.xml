@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nearby"
+        android:icon="@drawable/ic_location_24px"
+        android:title="Nearby" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_24px"
+        android:title="Workout" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile_24px"
+        android:title="Profile" />
+</menu>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".Login.GettingStartedActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:id="@+id/mainrel">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_hiwe_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="54dp"
+                android:id="@+id/top_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome To\nHiwe Fitness"
+                android:layout_below="@id/top_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/spd_semibold"
+                android:textSize="32dp"
+                android:id="@+id/tv_welcome"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_getting_started"
+                android:layout_below="@id/tv_welcome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:id="@+id/img_getting_started"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best way to manage your fitness\nmemberships."
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/spd_medium"
+                android:layout_below="@id/img_getting_started"
+                android:layout_marginTop="40dp"
+                android:textSize="16dp"
+                android:textColor="@color/gray"
+                android:gravity="center"
+                android:id="@+id/tv_bottom"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Started"
+                android:layout_below="@id/tv_bottom"
+                android:background="@drawable/orange_rectangle_10"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/spd_semibold"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:id="@+id/btn_getting_started"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
